@@ -1,0 +1,359 @@
+/*    WATER.CSS PROJECT — Кастомные стили     */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+}
+
+/*     ШАПКА (HEADER)     */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-body);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.header--hidden {
+    transform: translateY(-100%);
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.header__burger:hover {
+    background-color: var(--background-alt);
+}
+
+.header__burger-line {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-main);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.header__burger--active .header__burger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.header__burger--active .header__burger-line:nth-child(2) {
+    opacity: 0;
+}
+.header__burger--active .header__burger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.header__logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: var(--background-body);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.header__nav--active {
+    display: block;
+    animation: fadeDown 0.3s ease-out;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__item {
+    border-bottom: 1px solid var(--border);
+    margin: 0;
+}
+
+.header__item:last-child {
+    border-bottom: none;
+}
+
+.header__link {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s, padding-left 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.header__link:hover {
+    background-color: var(--background-alt);
+    color: var(--links);
+    padding-left: 30px;
+}
+
+.header__link--active {
+    color: var(--links) !important;
+    background-color: var(--background-alt);
+    border-left: 3px solid var(--links);
+}
+
+/*     ОСНОВНОЙ КОНТЕНТ И САЙДБАР     */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px; 
+}
+
+.main {
+    flex: 5;
+    min-width: 0;
+}
+
+.main section {
+    margin-bottom: 25px; /* Немного уменьшили отступ между секциями */
+}
+
+.main h2 {
+    margin-top: 25px;
+}
+
+.sidebar {
+    position: sticky; 
+    top: 100px; /* Немного уменьшили отступ сверху (с учетом высоты шапки) */
+    width: 220px; /* Было 250px — сделали чуть уже */
+    flex-shrink: 0;
+    align-self: flex-start;
+    z-index: 100;
+    background-color: var(--background-alt);
+    padding: 15px; /* Было 20px — уменьшили внутренние поля самого блока навигации */
+    border-radius: 8px;
+    height: fit-content;
+}
+
+
+/*     ПОДВАЛ     */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: var(--links);
+}
+
+/*  
+   ТАБЛИЦА
+     */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table caption {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*     ФОРМА ОБРАТНОЙ СВЯЗИ     */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.contact-form__submit {
+    margin-top: 20px;
+}
+
+/*     ВИДЕО     */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*     КОНТАКТЫ И ИСТОЧНИКИ     */
+.contacts-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contacts-list li {
+    margin-bottom: 10px;
+}
+
+.sources-list {
+    padding-left: 25px;
+}
+
+.sources-list li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.sources-list a {
+    word-break: break-all;
+}
+
+/*     АДАПТИВНОСТЬ     */
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .header__nav {
+        max-width: 380px;
+        left: 20px;
+        border-radius: 0 0 8px 8px;
+        border-left: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+    }
+
+    .header__logo {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 65px;
+    }
+
+    .header {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .header__logo {
+        font-size: 1.2rem;
+    }
+
+    .header__nav {
+        max-width: 100%;
+        left: 0;
+    }
+
+    .header__link {
+        padding: 14px 20px;
+    }
+
+    .sources-list {
+        padding-left: 20px;
+    }
+    .sources-list li {
+        margin-bottom: 12px;
+        text-align: left;
+    }
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+
+.pic {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  -webkit-mask-image: radial-gradient(circle,  #000 10%, transparent 100%);
+  mask-image: radial-gradient(circle, #000000 10%, transparent 50%);
+    margin-top: -75px;     /* Подтянуть картинку вверх */
+  margin-bottom: -100px;  /* Подтянуть текст снизу ближе */
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+ 
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выделенный сервер | Виды хостингов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <button class="header__burger" id="burger" aria-label="Открыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <div class="header__logo">HostingInfo</div>
+        <nav class="header__nav" id="nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
+                <li class="header__item"><a href="shared.html" class="header__link">Виртуальный хостинг</a></li>
+                <li class="header__item"><a href="vps.html" class="header__link">VPS/VDS</a></li>
+                <li class="header__item"><a href="dedicated.html" class="header__link header__link--active">Dedicated</a></li>
+                <li class="header__item"><a href="cloud.html" class="header__link">Облако</a></li>
+                <li class="header__item"><a href="colocation.html" class="header__link">Колокация</a></li>
+                <li class="header__item"><a href="criteria.html" class="header__link">Критерии</a></li>
+                <li class="header__item"><a href="projects.html" class="header__link">Проекты</a></li>
+                <li class="header__item"><a href="conclusion.html" class="header__link">Заключение</a></li>
+                <li class="header__item"><a href="contacts.html" class="header__link">Контакты</a></li>
+                <li class="header__item"><a href="sources.html" class="header__link">Библиографический список</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <h1>Выделенный сервер (Dedicated Server)</h1>
+            
+            <section>
+                <h2>Суть и принцип работы</h2>
+                <p>Выделенный сервер (dedicated server или «дедик») — это физический сервер в дата-центре провайдера, который арендуется целиком под ваш проект. Не виртуальная машина, где ресурсы делятся с соседями, а целая машина: процессор, память, диски — всё работает только на вас. Никакой борьбы за CPU с десятком других клиентов, никаких просадок производительности из-за того, что сосед по гипервизору запустил обучение нейросети. Ресурсы предсказуемы, производительность стабильна.</p>
+                <p>Клиенту предоставляется отдельный физический сервер с полными администраторскими правами. Вариант подходит владельцу среднего бизнеса.</p>
+            </section>
+
+            <section>
+                <h2>Преимущества</h2>
+                <ul>
+                    <li>Гарантированная производительность, предсказуемость, максимальная автономность.</li>
+                    <li>Вы получаете максимальную мощность, так как ни с кем не делите комплектующие сервера и не теряете производительность на установке гипервизоров.</li>
+                    <li>Минимум ограничений.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Недостатки</h2>
+                <ul>
+                    <li>Выделенный сервер, как правило, стоит существенно дороже.</li>
+                    <li>Есть вероятность, что в моменты снижения нагрузки полная мощность сервера окажется невостребованной.</li>
+                    <li>Проблемы с наращиванием мощностей (невозможно обойтись без апгрейда комплектующих).</li>
+                    <li>Требуется наличие в штате технического специалиста.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Когда выбирать</h2>
+                <p>Выделенные физические серверы выбирают те, кому необходимо работать с большими объемами данных, а мощностей нескольких VDS/VPS-серверов для этого не хватает. Подходит для высоконагруженных систем и приложений, БД с высокой нагрузкой, критичных веб-приложений, низколатентных сервисов.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Другие виды</h3>
+            <ul>
+                <li><a href="shared.html">Виртуальный хостинг</a></li>
+                <li><a href="vps.html">VPS/VDS</a></li>
+                <li><a href="cloud.html">Облачный хостинг</a></li>
+                <li><a href="colocation.html">Колокация</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 HostingInfo. Все права защищены.</p>
+        <ul class="footer__list">
+            <li><a href="sources.html" class="footer__link">Библиографический список</a></li>
+            <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

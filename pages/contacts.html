@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Виды хостингов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <button class="header__burger" id="burger" aria-label="Открыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <div class="header__logo">HostingInfo</div>
+        <nav class="header__nav" id="nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
+                <li class="header__item"><a href="shared.html" class="header__link">Виртуальный хостинг</a></li>
+                <li class="header__item"><a href="vps.html" class="header__link">VPS/VDS</a></li>
+                <li class="header__item"><a href="dedicated.html" class="header__link">Dedicated</a></li>
+                <li class="header__item"><a href="cloud.html" class="header__link">Облако</a></li>
+                <li class="header__item"><a href="colocation.html" class="header__link">Колокация</a></li>
+                <li class="header__item"><a href="criteria.html" class="header__link">Критерии</a></li>
+                <li class="header__item"><a href="projects.html" class="header__link">Проекты</a></li>
+                <li class="header__item"><a href="conclusion.html" class="header__link">Заключение</a></li>
+                <li class="header__item"><a href="contacts.html" class="header__link header__link--active">Контакты</a></li>
+                <li class="header__item"><a href="sources.html" class="header__link">Библиографический список</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <h1>Обратная связь</h1>
+            
+            <section>
+                <p>Есть вопросы по выбору хостинга, нужна консультация или хотите предложить тему для новой статьи? Заполните форму ниже, и мы свяжемся с вами.</p>
+                
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="topic">Тема обращения</label>
+                    <select id="topic" name="topic">
+                        <option value="help">Консультация по выбору хостинга</option>
+                        <option value="bug">Нашли ошибку</option>
+                        <option value="suggest">Предложить тему</option>
+                        <option value="other">Другое</option>
+                    </select>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение..." required></textarea>
+
+                    <button type="submit" class="contact-form__submit">Отправить</button>
+                </form>
+            </section>
+
+            
+            <section>
+                <h2>Наши контакты</h2>
+                <ul class="contacts-list">
+                    <li><strong>Email:</strong> <a href="mailto:zubovm041@gmail.com">zubovm041@gmail.com</a></li>
+                    <li><strong>Телефон:</strong> <a href="tel:+79042738527">+7 (904) 273-85-27</a></li>
+                    <li><strong>Адрес:</strong> г. Сыктывкар, ул. Ленина, д. 39, офис 307</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Навигация</h3>
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="criteria.html">Критерии подбора</a></li>
+                <li><a href="projects.html">Для разных проектов</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 HostingInfo. Все права защищены.</p>
+        <ul class="footer__list">
+            <li><a href="sources.html" class="footer__link">Библиографический список</a></li>
+            <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

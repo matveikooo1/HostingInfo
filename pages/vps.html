@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPS/VDS | Виды хостингов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <button class="header__burger" id="burger" aria-label="Открыть меню">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <div class="header__logo">HostingInfo</div>
+        <nav class="header__nav" id="nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html" class="header__link">Главная</a></li>
+                <li class="header__item"><a href="shared.html" class="header__link">Виртуальный хостинг</a></li>
+                <li class="header__item"><a href="vps.html" class="header__link header__link--active">VPS/VDS</a></li>
+                <li class="header__item"><a href="dedicated.html" class="header__link">Dedicated</a></li>
+                <li class="header__item"><a href="cloud.html" class="header__link">Облако</a></li>
+                <li class="header__item"><a href="colocation.html" class="header__link">Колокация</a></li>
+                <li class="header__item"><a href="criteria.html" class="header__link">Критерии</a></li>
+                <li class="header__item"><a href="projects.html" class="header__link">Проекты</a></li>
+                <li class="header__item"><a href="conclusion.html" class="header__link">Заключение</a></li>
+                <li class="header__item"><a href="contacts.html" class="header__link">Контакты</a></li>
+                <li class="header__item"><a href="sources.html" class="header__link">Библиографический список</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <h1>Виртуальный выделенный сервер (VPS/VDS)</h1>
+
+            <section>
+                <h2>Суть и принцип работы</h2>
+                <p>VPS (Virtual Private Server) представляет собой следующий логический шаг. Это виртуальная машина, которая работает на том же физическом сервере, что и другие, но отделена от них на уровне операционной системы. Заказчику предоставляется выделенная часть дискового пространства и фиксированные вычислительные ресурсы сервера. Владелец получает права администратора, что позволяет ему самостоятельно настраивать и изменять программное обеспечение.</p>
+                <p>Каждый VPS получает гарантированный объем ресурсов (ОЗУ, процессорные ядра), которые не могут быть использованы другими арендаторами. Вы получаете root-доступ к своей виртуальной среде, что дает возможность устанавливать практически любое программное обеспечение и настраивать сервер под специфические нужды проекта.</p>
+            </section>
+
+            <section>
+                <h2>Преимущества</h2>
+                <ul>
+                    <li>VPS предлагает отличный баланс между ценой и контролем.</li>
+                    <li>Вы получаете предсказуемую производительность, необходимую для растущих проектов.</li>
+                    <li>Перегруженность сайтов-соседей не влияет на ваш сайт.</li>
+                    <li>Гибкие настройки, масштабируемость и свой IP-адрес.</li>
+                    <li>Именно поэтому VPS чаще выбирают для коммерческих сайтов, онлайн-сервисов, API-проектов и приложений, где важна предсказуемая производительность.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Недостатки</h2>
+                <ul>
+                    <li>Стоимость VPS/VDS значительно превышает цены на shared-хостинг.</li>
+                    <li>Требуются технические знания для управления сервером.</li>
+                    <li>Вы либо нанимаете системного администратора, либо берете на себя ответственность за настройку и безопасность (если это не управляемый VPS).</li>
+                    <li>Недостаток в том, что требуется наличие в штате технического специалиста, который будет администрировать сайт, либо наём аутсорсинговой компании.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Когда выбирать</h2>
+                <p>VPS необходим, когда ваш сайт начинает испытывать ограничения shared-хостинга: при росте нагрузки, необходимости установки специфического ПО, повышении требований к безопасности. Подходит для интернет-магазинов, CRM, корпоративных сайтов.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Другие виды</h3>
+            <ul>
+                <li><a href="shared.html">Виртуальный хостинг</a></li>
+                <li><a href="dedicated.html">Выделенный сервер</a></li>
+                <li><a href="cloud.html">Облачный хостинг</a></li>
+                <li><a href="colocation.html">Колокация</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 HostingInfo. Все права защищены.</p>
+        <ul class="footer__list">
+            <li><a href="sources.html" class="footer__link">Библиографический список</a></li>
+            <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
